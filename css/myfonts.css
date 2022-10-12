@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Campanella; /* Гарнитура шрифта */
+    src: url(fonts/Campanella.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: CalligraphModern; /* Гарнитура шрифта */
+    src: url(fonts/CalligraphModern.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: a_AllgidusDstr; /* Гарнитура шрифта */
+    src: url(fonts/a_AllgidusDstr.ttf); /* Путь к файлу со шрифтом */
+}
+
+#menu{
+		font-family: CalligraphModern, 'Comic Sans MS', cursive;
+		font-style: italic;
+		font-size:36px;
+}
+
+
+   

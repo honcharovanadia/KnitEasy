@@ -1,0 +1,40 @@
+button {
+    background:#9bd9e8;
+}
+
+button > img, #mouse{
+	width:100px;
+}
+
+h1{
+	font-size:38px;
+}
+
+input[type='number']{
+	width:3cm;
+}
+
+#description{
+	font-style:italic;
+}
+
+#model{
+	margin:2em 0;
+}
+
+#instruct label{
+	color:blue;
+}
+
+.NB{
+	font-size:14px;
+	color:red;
+	font-weight: 600;
+}
+
+.text p,ol{
+	font-size:24px;
+}
+
+
+

@@ -1,0 +1,177 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>KneetingEasy</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="images/kee.ico" >
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/myfonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/input-form.css" rel="stylesheet" type="text/css" media="all" />
+<!--<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />-->
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+</head>
+<body>
+<div class="head-container">
+	<div id="header" class="container">
+		<div id="logo">
+			<a href="#"><img src='images/kneeting-easy3.png' class='image'></a>
+		</div>
+		<nav>
+			<ul id='menu'>
+				<li class="active"><a href="index.html" accesskey="1" title="">Главная</a></li>
+				<li ><a href="#" accesskey="3" title="" class='expandable'>Расчет&nbsp;<span></span></a>
+					<ul class="submenu">
+						<li><a href="skirt.html">Прямая вязаная юбка</a></li>
+						 <li><a href="#">Свитер с вточным рукавом</a></li>
+					 </ul>
+				</li>
+				<li><a href="#" accesskey="4" title="">Помощь</a></li>
+				<li><a href="#" accesskey="5" title="">Контакты</a></li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+	<div id="banner"></div>
+
+
+	<div id="featured" class="container">
+		<div class="text">
+			<center><h1>Вязаный свитер с вточным рукавом и круглой горловиной</h1>
+				<img id='model' class="image" src="images/sviter.jpg" alt="Свитер с вточным рукавом">
+				<p id='description'>Поход на прогулку или теплое дополнение к рабочему наряду. Свитер сделает долгие зимние вечера уютными и теплыми.</p>
+			<p><h2>Порядок действий:</h2></p>
+			</center>
+			<ol id="instruct">
+				<li>	
+					Выберите пряжу, спицы и узор. 
+				</li>
+				<li>
+					Свяжите образец размерами приблизительно 10х10 (если образец будет меньше, то точность расчетов будет снижена). 
+					Измерьте его <label for='kcmy' form='inpform'>высоту</label> и <label for='kcmx' form='inpform'>ширину</label> и введите в соответствующие поля.<br>
+				</li>
+				<li>
+					Затем посчитайте количество <label for='ksx' form='inpform'>петель</label> и <label for='ksy' form='inpform'>рядов</label> в образце и тоже введите в соответствующие им полям.<br>
+					Остальные расчеты относительно плотности вязания программа выполнит самостоятельно.
+				</li>
+				<li> 
+					Снимите <a href="#"> мерки</a> с модели, на каторую будет связана вещь. Введите их в соответствующие поля.
+				</li>
+				<li>
+					По умолчанию будет расчитана только схема. Если Вам нужна выкройка, отметьте соответствующий флажек.
+				</li>
+				<li> Нажмите "Продолжить".</li>
+				<li> Скачайте или <a href="#"> распечатайте схему</a> и/или выкройку.</li>
+			</ol><br>
+		</div>
+		<center>
+			<form method='post' action='Calculating.php'>
+				<table>
+					<tr><th colspan='2'><h1>Необходимые размеры:</h1><br>Плотность вязания:</th></tr>
+					<tr>
+						<td><label for='kcmx'>Размеры в сантиметрах*</label></td>
+						<td>
+							<input type="number" min='0' step='any' id="kcmx" name='kcmx' required placeholder='ширина'> х 
+							<input type="number" min='0' id="kcmy" name='kcmy' required placeholder='высота'>
+						</td>
+					</tr>
+					<tr>
+						<td><label for='ksx'>Размеры в петлях*</label></td>
+							<td>
+								<input type="number" min='0' step='any' id="ksx" name='ksx' required placeholder='ширина'> х 
+								<input type="number" min='0' id="ksy" name='ksy' required placeholder='высота'>
+							</td>
+					</tr>
+					<tr>
+						<th colspan='2'><br>Мерки:</th>
+					</tr>
+					<tr>
+						<td><label for='Cb'>Обхват бедер*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Cb' name='Cb' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Oz'>Обхват запястья/желаемая ширина ракава*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Oz' name='Oz' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Cg'>2-й Обхват груди*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Cg' name='Cg' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Shs'>Ширина спины*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Shs' name='Shs' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Shp'>Ширина плеча*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Shp' name='Shp' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Dst'>Длина спины до талии*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Dst' name='Dst' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Dpt'>Высота от плеча до талии*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Dpt' name='Dpt' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Dps'>Длина переда по центру*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Dps' name='Dps' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Dr'>Желаемая длинна рукава*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Dr' name='Dr' required> см</td>
+					</tr>
+					<tr>
+						<td><label for='Di'>Желаемая длина изделия*</td>
+						<td><input class='measure' type='number' min=0 step='any' id='Di' name='Di' required> см</td>
+					</tr>
+					<tr>
+						<td colspan=2><input type='checkbox' id='bPat' name='bPat' value='1'><label for='bPat'><i><font color='#32CD32'>Построить выкройку</font></i><img id='mouse' src='images/mouse.png' width='30px'></label></td>
+					</tr>
+					<tr>
+					<td colspan='2'>
+						<p class='NB'>* Обязательные для заполнения поля.</p>
+					</td>
+					</tr>
+					<tr>
+						<td colspan=2 >
+							<input id="type" name='type' type="hidden" value="2">
+							<br><button type="submit" name='goOn'>
+								<img  src="images/go-on_button.png">
+							</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</center><br>
+	</div>
+<div id="copyright" class="container">
+	<center><table class="foot">
+		<tr>
+		<td>
+			<img src="images/phone.png" alt="Тел." >
+		</td>
+		<td class="ftd">
+			+380994885919&nbsp&nbsp&nbsp
+		
+		</td>
+		<td>
+			<img src="images/viber.png" alt="Viber" > 
+		</td>
+		<td>
+			+380671277674&nbsp&nbsp&nbsp
+		<td>
+		</td>
+		<td>
+			<img src="images/gmail.png" alt="e-mail" >
+		</td>
+		<td>
+			<a href="#">vyazhem_prosto@gmail.com</a>
+		</td>
+		</tr>
+	</table></center>
+</div>
+</body>
+</html>
